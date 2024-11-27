@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,36 +33,33 @@
 
   body {
     @apply bg-background text-foreground;
-    @apply font-body text-lg leading-8 text-secondary;
+    @apply font-barlow text-[15px] md:text-base lg:text-lg leading-6 md:leading-7 lg:leading-8 text-secondary;
   }
   h1,
   h2,
   h3,
   h4 {
-    @apply font-heading text-foreground leading-normal uppercase;
+    @apply font-bellefair text-foreground leading-normal uppercase;
   }
   h1 {
-    @apply text-[150px];
+    @apply text-[80px] md:text-[150px];
   }
   h2 {
-    @apply text-[100px];
+    @apply lg:text-[100px];
   }
   h3 {
-    @apply text-[56px];
+    @apply lg:text-[56px];
   }
   h4 {
-    @apply text-[32px];
+    @apply lg:text-[32px];
   }
   h5 {
-    @apply text-[28px] leading-normal tracking-[4.75px] uppercase;
+    @apply font-barlow_condensed text-[16px] md:text-[20px] lg:text-[28px] leading-normal tracking-[2.7px] md:tracking-[3.38px] lg:tracking-[4.75px] uppercase;
   }
   .sub1 {
-    @apply font-heading leading-normal uppercase text-[28px];
+    @apply font-bellefair leading-normal uppercase text-[28px];
   }
   .sub2 {
-    @apply text-[14px] leading-normal  tracking-[2.35px] uppercase;
-  }
-  .nav-item {
-    @apply text-foreground text-base tracking-[2.7px] uppercase hover:underline hover:decoration-[3px] hover:decoration-white/50 active:decoration-white;
+    @apply font-barlow_condensed text-[14px] leading-normal tracking-[2.35px] uppercase;
   }
 }
