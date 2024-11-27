@@ -13,6 +13,7 @@ import destinationDesktop from "/src/assets/images/destination/background-destin
 import technologyMobile from "/src/assets/images/technology/background-technology-mobile.jpg";
 import technologyTablet from "/src/assets/images/technology/background-technology-tablet.jpg";
 import technologyDesktop from "/src/assets/images/technology/background-technology-desktop.jpg";
+import NotFound from "./components/NotFound";
 
 const backgrounds: Record<string, string> = {
   "/": `bg-[url('${homeMobile}')] md:bg-[url('${homeTablet}')] lg:bg-[url('${homeDesktop}')]`,
@@ -27,11 +28,12 @@ function App() {
   return (
     <>
       <main
-        className={`grid min-h-screen grid-rows-[fit-content,1fr] bg-cover bg-center ${backgrounds[pathname]}`}
+        className={`grid min-h-screen grid-rows-[auto,1fr] items-center bg-cover bg-center ${backgrounds[pathname]}`}
       >
         <Navbar />
         <Routes>
           <Route index element={<Home />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
     </>
