@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import NavSheet from "./NavSheet";
-import logo from "../assets/logo.svg";
+import logo from "/src/assets/logo.svg";
 
 const navItems = [
   { text: "Home", path: "/" },
