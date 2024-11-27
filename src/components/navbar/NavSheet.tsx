@@ -17,7 +17,7 @@ function NavSheet({
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetHeader>
+      <SheetHeader className="hidden">
         <SheetTitle>
           <p className="sr-only">Navigation Menu</p>
         </SheetTitle>
