@@ -24,7 +24,7 @@ function Navbar() {
               className="font-barlow_condensed text-[14px] uppercase tracking-[2.7px] text-foreground decoration-[3px] underline-offset-[44px] hover:underline hover:decoration-white/50 has-[.active]:underline has-[.active]:decoration-white"
             >
               <NavLink to={item.path}>
-                <span className="hidden font-bold lg:inline-block">0{i}</span>{" "}
+                <span className="hidden font-bold lg:inline">0{i}</span>{" "}
                 {item.text}
               </NavLink>
             </li>
