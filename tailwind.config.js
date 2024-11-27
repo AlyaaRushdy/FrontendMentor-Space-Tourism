@@ -39,8 +39,9 @@ export default {
         ring: "hsl(var(--ring))",
       },
       fontFamily: {
-        body: ["Barlow Condensed", "serif"],
-        heading: "Bellefair, serif",
+        barlow: ["Barlow", "sans-serif"],
+        bellefair: ["Bellefair, serif"],
+        barlow_condensed: ["Barlow Condensed", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
